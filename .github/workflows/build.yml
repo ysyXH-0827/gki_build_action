@@ -41,6 +41,7 @@ jobs:
       STOCK_CONFIG: ${{ matrix.CONFIG.stock_config }}
       LXC: ${{ matrix.CONFIG.lxc_enable }}
       SSG: ${{ matrix.CONFIG.ssg }}
+      HYMOFS: ${{ matrix.CONFIG.hymofs }}
       BBG: ${{ matrix.CONFIG.baseband_guard }}
       BETTER_NET: ${{ matrix.CONFIG.better_net }}
       SUSFS: ${{ matrix.CONFIG.susfs }}
@@ -200,7 +201,11 @@ jobs:
             echo "CONFIG_REKERNEL=y" >> "kernel_workspace/common/arch/arm64/configs/gki_defconfig"
             echo "CONFIG_REKERNEL_NETWORK=y" >> "kernel_workspace/common/arch/arm64/configs/gki_defconfig"
           fi
-          
+      - name: 添加Hymofs
+        run: |
+          if [[ "${{ env.HYMOFS }}" == "true" ]]; then
+            echo "CONFIG_HYMOFS=y" >> "kernel_workspace/common/arch/arm64/configs/gki_defconfig"
+          fi
 
       - name: 添加SSG IO调速器
         run: |

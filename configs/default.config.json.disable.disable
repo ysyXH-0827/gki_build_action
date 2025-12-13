@@ -5,6 +5,7 @@
   "rekernel_enable": "true",
   "susfs": "true",
   "ssg": "true",
+  "hymofs": "true",
   "lxc_enable": "false",
   "stock_config": "false",
   "baseband_guard": "true",

@@ -4,6 +4,7 @@
   "zram": "false",
   "rekernel_enable": "true",
   "susfs": "false",
+  "hymofs": "true",
   "ssg": "false",
   "lxc_enable": "false",
   "stock_config": "false",
