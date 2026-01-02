@@ -6,7 +6,7 @@
   "susfs": "false",
   "ssg": "false",
   "lxc_enable": "false",
-  "stock_config": "false",
+  "stock_config": "true",
   "baseband_guard": "false",
   "key": "ak3-5.10_esk"
 }
