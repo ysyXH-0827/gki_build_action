@@ -1,9 +1,8 @@
 {
-  "kernelsu": "disable",
+  "kernelsu": "true",
   "better_net": "false",
   "zram": "false",
   "rekernel_enable": "true",
-  "susfs": "false",
   "ssg": "false",
   "lxc_enable": "false",
   "stock_config": "true",

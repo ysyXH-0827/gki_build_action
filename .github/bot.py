@@ -13,7 +13,6 @@ REKERNEL = os.environ.get("REKERNEL")
 KERNELSU = os.environ.get("KERNELSU")
 BBG = os.environ.get("BBG")
 LXC = os.environ.get("LXC")
-SUSFS = os.environ.get("SUSFS")
 KERNEL = os.environ.get("KERNEL")
 ZRAM = os.environ.get("ZRAM")
 SSG = os.environ.get("SSG")
@@ -32,7 +31,6 @@ rekernel status: {rekernel}
 lxc support status: {lxc}
 BBG: {bbg}
 better_net status: {better_net}
-susfs status: {susfs}
 more ZRAM: {zram}
 ```
 [Workflow run]({run_url})
@@ -48,7 +46,6 @@ def get_caption():
         lxc=LXC,
         bbg=BBG,
         better_net=BETTER_NET,
-        susfs=SUSFS,
         zram=ZRAM,
         run_url=RUN_URL,
     )
